@@ -1,0 +1,19 @@
+   <form>
+            <label>CEP:</label><br />
+            <input type="text" name="cep" id="cep" [(ngModel)]="cep.cep" />          
+            <label>Rua:</label><br />
+            <input type="text" name="logradouro" id="rua" [(ngModel)]="cep.logradouro" />
+            <label>Número:</label><br />
+            <input type="text" name="numero" id="numero" [(ngModel)]="cep.numero" />
+            <label>Complemento:</label><br />
+            <input type="text" name="complemento" id="bairro" [(ngModel)]="cep.complemento" /> 
+            <label>Cidade:</label><br />
+            <input type="text" name="cidade" id="cidade" [(ngModel)]="cep.cidade" />
+            <label>Bairro:</label><br />
+            <input type="text" name="bairro" id="estado" [(ngModel)]="cep.bairro" />  
+            <label>Estado:</label><br />
+            <input type="text" name="estado" id="estado" [(ngModel)]="cep.estado" /> 
+            <button  type="button" value="Buscar" (click)="buscar()"> Buscar </button><br/><br/>
+ 
+        </form>
+        
